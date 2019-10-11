@@ -1,0 +1,26 @@
+
+form{
+  margin-top: 20px;
+}
+#musician{
+  margin-top: 75px !important
+}
+
+button{
+  font-size: 20px;
+  width:150px;
+  height: 50px;
+}
+#Edit, #Add, #Delete, #Save, input {
+  margin-left: 15px;
+}
+
+input{
+  width: 550px;
+  height: 50px;
+}
+
+#Musician-name{
+  margin-bottom: 15px;
+  margin-top: 60px;
+}
