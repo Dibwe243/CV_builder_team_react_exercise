@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import musician from "./musician";
 import "./App.css";
-
+​
 class App extends Component {
   constructor() {
     super();
@@ -68,7 +68,7 @@ class App extends Component {
       ]
     };
   }
-
+​
   render() {
     const artistToRender = this.state.musicians;
     
@@ -86,5 +86,5 @@ class App extends Component {
     );
   }
 }
-
+​
 export default App;
