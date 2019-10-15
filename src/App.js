@@ -1,7 +1,6 @@
-
-import React, { Component } from 'react';
-import musician from './musician';
-import './App.css';
+import React, { Component } from "react";
+import musician from "./musician";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -73,22 +72,28 @@ class App extends Component {
           name: "Artist 13",
           display: false
         },
-        
+        {
+          id: 14,
+          name: "Artist 14",
+          display: false
+        }
       ]
     };
   }
 
   render() {
-    const artistToRender = this.state.musicians.filter(artist => artist.display);
+    // const artistToRender = this.state.musicians.filter(
+    //   artist => artist.display
+    );
     return (
       <div>
         <musician name={this.state.name} />
         <ul>
-          {
-            artistToRender.map((el,i)=> {
-              return (<li key={el.id}>{el.name}</li>)           
-          }).filter((e,k) =>  k < 10)
-          }
+          {artistToRender
+            .map((el, i) => {
+              return <li key={el.id}>{el.name}</li>;
+            })
+            .filter((e, k) => k < 10)}
         </ul>
       </div>
     );
